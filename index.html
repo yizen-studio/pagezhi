@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="PageZhi｜頁織 Chrome 擴充功能隱私權政策，說明網頁截圖、圖片編輯、PDF 處理及本機儲存方式。">
+  <title>隱私權政策｜PageZhi 頁織</title>
+  <style>
+    :root{--navy:#243D50;--teal:#208f94;--line:#dce8ed;--muted:#5d7380;--bg:#f4f8fa}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--navy);font:16px/1.85 system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif}
+    .wrap{max-width:880px;margin:48px auto;padding:44px 50px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 35px #1738490a}
+    .brand{display:flex;align-items:center;gap:12px;color:var(--teal);font-weight:750;letter-spacing:.025em}.mark{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;background:var(--navy);color:#fff;border-radius:10px;font-size:20px}
+    h1{font-size:clamp(1.75rem,5vw,2.2rem);line-height:1.3;margin:22px 0 12px}h2{font-size:1.18rem;margin:30px 0 10px;color:#184c5b}p{margin:0 0 14px}ul{margin:0 0 15px;padding-left:1.5em}li{padding-left:.1em;margin-bottom:5px}
+    .meta{color:var(--muted);font-size:.92rem;padding-bottom:24px;border-bottom:1px solid var(--line)}a{color:#126c79;overflow-wrap:anywhere}a:hover{text-decoration:none}.note{padding:14px 18px;background:#eef7f7;border-left:3px solid #42bfc0;border-radius:5px}.footer{margin-top:35px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.9rem}
+    @media(max-width:700px){body{background:#fff}.wrap{margin:0;padding:25px 22px;border:0;border-radius:0;box-shadow:none}}
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <div class="brand"><span class="mark" aria-hidden="true">織</span><span>PageZhi · 頁織</span></div>
+  <h1>隱私權政策</h1>
+  <p class="meta">適用產品：PageZhi｜頁織 Chrome 擴充功能（版本 2.2.0）<br>最後更新：2026 年 11 月 23 日</p>
+
+  <section><h2>1. 適用範圍</h2>
+  <p>本政策說明 PageZhi｜頁織（以下簡稱「本擴充功能」）如何在提供網頁截圖、圖片編輯、PDF 匯入及匯出功能時，存取、使用和保存資料。</p></section>
+
+  <section><h2>2. 處理的資料與使用目的</h2>
+  <p>當你主動使用截圖功能，本擴充功能會處理你選擇的網頁畫面或區域，內容可能包含文字、圖片、個人資料或敏感資訊。當你主動匯入 PDF 或圖片，或使用標註、裁切、馬賽克、複製、下載等功能時，本擴充功能亦會處理相關內容。</p>
+  <p>這些資料僅用於執行你要求的畫面擷取、內容編輯、PDF 處理與輸出操作。本擴充功能不以追蹤瀏覽歷史、建立使用者輪廓或廣告定向為目的。</p></section>
+
+  <section><h2>3. 瀏覽器權限用途</h2>
+  <ul>
+    <li><strong>activeTab：</strong>在你主動啟用擷取功能時，暫時存取使用中的分頁以擷取畫面。</li>
+    <li><strong>scripting：</strong>在目前分頁執行本擴充功能隨套件提供的程式，進行畫面尺寸量測、捲動擷取與區域框選。</li>
+    <li><strong>clipboardWrite：</strong>依你的操作，將擷取或編輯的圖片複製到系統剪貼簿。</li>
+    <li><strong>file:///*：</strong>在 Chrome 允許本擴充功能存取檔案網址的情況下，支援讀取使用者開啟的本機 PDF。</li>
+  </ul></section>
+
+  <section><h2>4. 本機儲存及保存期限</h2>
+  <p>為了將完整網頁的分段截圖重組並開啟編輯器，本擴充功能可能把截圖工作資料與圖片分塊保存在瀏覽器本機的 IndexedDB（名為 <strong>captures</strong> 的資料庫）。</p>
+  <p><strong>版本 2.2.0 未提供已確認的自動到期刪除機制。</strong>暫存資料可能持續保留於瀏覽器的擴充功能儲存空間，直到你清除相關擴充功能資料、移除本擴充功能，或未來版本提供其他清理方式。關閉編輯器不代表資料一定已刪除。</p></section>
+
+  <section><h2>5. 網路請求、第三方與分享</h2>
+  <p>依目前 2.2.0 版本的功能程式，本擴充功能沒有將截圖或 PDF 上傳至開發者管理伺服器的功能，也未整合第三方廣告追蹤或使用分析服務。</p>
+  <p>當你要求從目前開啟的 HTTP／HTTPS PDF 網址匯入文件時，瀏覽器可能向該 PDF 來源網站發送讀取請求，並依瀏覽器規則附帶適用的 Cookie 或登入憑證。該來源網站對請求及資料的處理，依其自身政策而定。</p>
+  <p>若你主動將圖片複製到剪貼簿、下載或分享至其他應用程式，資料將依你的操作進入你選擇的目的地；這些目的地的資料處理不由 PageZhi 控制。</p></section>
+
+  <section><h2>6. 資料使用限制</h2>
+  <p>本擴充功能不出售使用者資料，不為與本擴充功能明示用途無關的目的轉移使用者資料，也不使用使用者資料進行信用評等或貸款決策。</p>
+  <p class="note">本擴充功能對使用者資料的使用遵循 <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" target="_blank" rel="noopener noreferrer">Chrome Web Store User Data Policy（含 Limited Use 要求）</a>。</p></section>
+
+  <section><h2>7. 你的控制與資料刪除</h2>
+  <p>你可以選擇是否啟動擷取、選取範圍、匯入文件、複製或下載。若想刪除本機暫存資料，可透過 Chrome 的擴充功能儲存資料管理方式清除 PageZhi 的本機資料，或解除安裝擴充功能。請先另行保存你需要保留的編輯成果或下載檔案；清除擴充功能資料不會自動刪除你已自行儲存至其他位置的檔案。</p></section>
+
+  <section><h2>8. 資訊安全與政策更新</h2>
+  <p>本擴充功能僅為所述功能請求必要的瀏覽器權限。任何軟體或資料處理方式均無法保證絕對安全。若未來加入雲端服務、分析工具，或實質改變資料使用方式，我們將更新本政策及相關商店揭露資訊。</p></section>
+
+  <section><h2>9. 聯絡方式</h2>
+  <p>產品：PageZhi｜頁織<br>發布者：Yang Yi Zen<br>支援及隱私相關聯絡：<a href="mailto:pagezhi.support@gmail.com">pagezhi.support@gmail.com</a></p></section>
+  <div class="footer">© 2026 PageZhi｜頁織。此頁供使用者了解 PageZhi 的資料處理方式。</div>
+</main>
+</body>
+</html>
